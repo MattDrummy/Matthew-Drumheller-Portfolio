@@ -1,6 +1,6 @@
 let cubeRotation = 0.0;
-
-main();
+speed = 0.001;
+main(speed);
 
 function main() {
   const canvas = document.querySelector('#welcome-canvas');
@@ -92,7 +92,7 @@ function main() {
 
   // Draw the scene repeatedly
   function render(now) {
-    now *= 0.001;  // convert to seconds
+    now *= speed;  // convert to seconds
     const deltaTime = now - then;
     then = now;
 
