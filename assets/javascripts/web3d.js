@@ -1,5 +1,11 @@
 let cubeRotation = 0.0;
-speed = 0.001;
+let speed = 0.0005;
+let size;
+if ($('body').width() < 769) {
+  size = 55;
+} else {
+  size = 35;
+}
 main(speed);
 
 function main() {
@@ -96,7 +102,7 @@ function main() {
     const deltaTime = now - then;
     then = now;
 
-    drawScene(gl, programInfo, buffers, texture, deltaTime);
+    drawScene(gl, programInfo, buffers, texture, deltaTime, size);
 
     requestAnimationFrame(render);
   }
@@ -342,7 +348,7 @@ function isPowerOf2(value) {
 //
 // Draw the scene.
 //
-function drawScene(gl, programInfo, buffers, texture, deltaTime) {
+function drawScene(gl, programInfo, buffers, texture, deltaTime, size) {
   gl.clearColor(0.0, 0.0, 0.0, 0.0);  // Clear to black, fully opaque
   gl.clearDepth(1.0);                 // Clear everything
   gl.enable(gl.DEPTH_TEST);           // Enable depth testing
@@ -359,7 +365,7 @@ function drawScene(gl, programInfo, buffers, texture, deltaTime) {
   // and we only want to see objects between 0.1 units
   // and 100 units away from the camera.
 
-  const fieldOfView = 35 * Math.PI / 180;   // in radians
+  const fieldOfView = size * Math.PI / 180;   // in radians
   const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
   const zNear = 0.1;
   const zFar = 100.0;
@@ -382,7 +388,7 @@ function drawScene(gl, programInfo, buffers, texture, deltaTime) {
 
   mat4.translate(modelViewMatrix,     // destination matrix
                  modelViewMatrix,     // matrix to translate
-                 [-0.0, 0.0, -6.0]);  // amount to translate
+                 [-0.0, 0.0, -6.5]);  // amount to translate
   mat4.rotate(modelViewMatrix,  // destination matrix
               modelViewMatrix,  // matrix to rotate
               cubeRotation,     // amount to rotate in radians

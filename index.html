@@ -8,16 +8,29 @@
     <title>Matthew Drumheller</title>
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/style.css">
 
   </head>
   <body>
-    <section class="index-page container">
+    <header>
+      <!-- <button class="btn nav-button" type="button" name="button"><small>test</small></button> -->
+    </header>
+    <main class="index-page container">
       <canvas id="welcome-canvas" class="index-canvas"></canvas>
-      <button class="btn welcome-button" type="button" name="button">enter</button>
-      <div class="main container">
+      <button class="btn welcome-button" type="button" name="button">{{ enter }}</button>
+      <div class="pop-up container">
+        <div class="top-spacer">
+          <button class="btn close-button"type="button" name="button">X</button>
+        </div>
+        <h1>Matthew Drumheller</h1>
+
       </div>
-    </section>
+    </main>
+
+    <footer>
+      <small>&copy; Matthew Drumheller</small>
+    </footer>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
