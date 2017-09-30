@@ -33,23 +33,42 @@ header {
   align-items: center;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .welcome-button {
   position: absolute;
   background-color: rgba(50,58,69,0.4);
   color: white;
   border: 1px solid white;
-
 }
 
 .welcome-button:hover {
+
   background-color: rgba(255,255,255,0.6);
   color: black;
   border: 1px solid black;
-  font-size: 1.5em;
+  font-size: 2em;
   transition: 2s;
-
 }
 
+@media (max-width: 1024px){
+  .welcome-button {
+    position: absolute;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    border: 1px solid black;
+  }
+
+  .close-button {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+}
 .pop-up {
   position: absolute;
   background-color: rgba(220, 230, 240, 0.75);

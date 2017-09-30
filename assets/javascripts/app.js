@@ -1,6 +1,7 @@
 $('.pop-up').fadeOut(0);
 $('header').fadeOut(0);
 $('footer').fadeOut(0);
+
 $('.welcome-button').click((event)=> {
   $('.welcome-button').css('display', 'none');
   $('.pop-up').slideDown(1000, function(){
