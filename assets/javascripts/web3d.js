@@ -2,7 +2,7 @@ let cubeRotation = 0.0;
 let speed = 0.0005;
 let size;
 let mobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
-if (mobile) {
+if (mobile || $(document).width() < 769) {
   size = 55;
 } else {
   size = 33;
