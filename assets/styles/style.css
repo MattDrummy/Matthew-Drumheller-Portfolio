@@ -2,12 +2,12 @@ body {
   --color1: rgb(40, 48, 59);
   background-color: var(--color1);
   font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
 }
 
 .background-image {
   position: absolute;
   height: 100%;
+  width: 100%;
   z-index: -2;
   opacity: 0.2;
 }
@@ -151,6 +151,9 @@ table tr:last-child {
   border: 0;
 }
 
+td {
+  transition: 1s;
+}
 tr td:first-child {
   padding-right: 1em;
   border-right: 1px solid grey;
@@ -161,7 +164,7 @@ tr td:last-child {
 }
 
 
-/*DESKTOP MEDIA QUERY*/
+/*MOBILE MEDIA QUERY*/
 
 @media screen and (max-width: 1024px){
   .welcome-button {
@@ -193,22 +196,21 @@ tr td:last-child {
   }
 
   .profile-photo {
-    height: 150px;
+    height: 250px;
   }
 
-  .profile-photo:hover {
-    height: 200px;
-
-  }
   .mobile-resume {
     display: block;
   }
   .desktop-resume {
     display: none;
   }
+  td {
+    font-size: 1.3em;
+  }
 }
 
-/*MOBILE MEDIA QUERY*/
+/*DESKTOP MEDIA QUERY*/
 
 @media (min-width: 1024px) {
   .pop-up{
@@ -226,8 +228,7 @@ tr td:last-child {
   }
 
   .profile-photo:hover {
-    height: 250px;
-
+    height: 300px;
   }
   .mobile-resume {
     display: none;
@@ -235,4 +236,5 @@ tr td:last-child {
   .desktop-resume {
     display: block;
   }
+
 }
