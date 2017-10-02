@@ -1,5 +1,5 @@
 body {
-  --color1: rgb(50, 58, 69);
+  --color1: rgb(40, 48, 59);
   background-color: var(--color1);
   font-family: 'Raleway', sans-serif;
 }
