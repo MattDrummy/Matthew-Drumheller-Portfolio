@@ -134,6 +134,10 @@ p {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: none;
+  border: 1px solid blue;
+}
 a h2 {
   cursor: pointer;
 }
