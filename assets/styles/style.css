@@ -132,7 +132,7 @@ p {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 a h2 {
   cursor: pointer;
