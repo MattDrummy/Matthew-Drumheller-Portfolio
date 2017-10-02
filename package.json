@@ -1,0 +1,19 @@
+{
+  "name": "matthew-drumheller-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site for Matthew Drumheller.  For use with resume and hopefully getting a job",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattDrummy/Matthew-Drumheller-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattDrummy/Matthew-Drumheller-Portfolio/issues"
+  },
+  "homepage": "https://github.com/MattDrummy/Matthew-Drumheller-Portfolio#readme"
+}
