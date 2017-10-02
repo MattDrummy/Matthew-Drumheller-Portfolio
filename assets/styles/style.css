@@ -127,7 +127,8 @@ footer small {
 
 h1,
 h2,
-p {
+p,
+tr td:first-child {
   cursor: default;
 }
 
