@@ -1,15 +1,23 @@
-$('.pop-up').fadeOut(0);
-$('header').fadeOut(0);
-$('footer').fadeOut(0);
+$(document).ready(()=>{
+  main(speed);
+})
+
+// $('.pop-up').fadeOut(0);
+// $('header').fadeOut(0);
+// $('footer').fadeOut(0);
 
 $('.welcome-button').click((event)=> {
   $('.welcome-button').css('display', 'none');
   $('.pop-up').slideDown(1000, function(){
+
   })
   $('.index-canvas').css('opacity', '0.5')
-
   $('header').slideToggle(1000);
   $('footer').slideToggle(1000);
+  $('header').css('display','flex');
+  $('footer').css('display','flex');
+  $('.pop-up').css('display','block');
+
 
 })
 

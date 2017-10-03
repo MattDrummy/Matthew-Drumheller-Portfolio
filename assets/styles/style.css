@@ -14,13 +14,12 @@ body {
 
 header {
   position: absolute;
-  display: flex;
+  display: none;
   top: 0;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
   color: white;
   padding: 0 2em;
-
 }
 
 .nav-button {
@@ -30,7 +29,6 @@ header {
 .index-canvas {
   height: 100vh;
   width: 100vh;
-  opacity: 1;
   transition: 1s;
 }
 
@@ -61,6 +59,7 @@ button:hover {
 }
 
 .pop-up {
+  display: none;
   position: absolute;
   background-color: rgba(220, 230, 240, 0.75);
   box-sizing: border-box;
@@ -111,7 +110,7 @@ button:hover {
 
 footer {
   position: absolute;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   bottom: 0;
@@ -128,7 +127,8 @@ footer small {
 h1,
 h2,
 p,
-tr td:first-child {
+tr td:first-child,
+small {
   cursor: default;
 }
 

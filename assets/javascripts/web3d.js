@@ -1,3 +1,4 @@
+
 let cubeRotation = 0.0;
 let speed = 0.0005;
 let size;
@@ -7,8 +8,6 @@ if (mobile || $(document).width() < 769) {
 } else {
   size = 33;
 }
-main(speed);
-
 function main() {
   const canvas = document.querySelector('#welcome-canvas');
   const gl = canvas.getContext('webgl');
@@ -93,7 +92,7 @@ function main() {
   // objects we'll be drawing.
   const buffers = initBuffers(gl);
 
-  const texture = loadTexture(gl, 'cubetexture.png');
+  const texture = loadTexture(gl, 'cubetexture.jpg');
 
   var then = 0;
 
